@@ -1,0 +1,32 @@
+h1{
+    color: rgb(49, 37, 36);
+}
+body {
+    background-color: antiquewhite;
+}
+.Calculator{
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+}
+/* buttons = containerที่จัดการlayout buttonทั้งหมด */
+.buttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+/* ควบคุมปุ่มทุกตัว(button) */
+button{
+ height: 60px;
+}
+/* span 2 = กินช่อง 2 ช่อง column = เเถวเเนวนอน
+ส่วนนี้คือitem ที่สามารถปรับเเต่งตัวมันเองเเละคือส่วนที่อยู่ภายใน.buttons */
+.button-number-zero{
+    /* span 2 columns starting from column 1 */
+    grid-column: 1 / span 2; 
+}
+
+/* row = เเถวเเนวตั้ง */
+.button-equal{
+    /* span 2 rows vertically */
+    grid-row: span 2;
+}
