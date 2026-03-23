@@ -8,6 +8,13 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: block;
 }
+#display{
+    text-align: right;
+    color: white;
+    background-color: gray;
+    size: 20px;
+    padding: 20px;
+} 
 /* buttons = containerที่จัดการlayout buttonทั้งหมด */
 .buttons{
     display:grid;
